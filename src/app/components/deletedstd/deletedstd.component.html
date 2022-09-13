@@ -1,0 +1,27 @@
+<button
+  type="button"
+  style="margin-block: 500"
+  class="btn btn-outline-warning"
+  (click)="get()"
+>
+  StudentsList
+</button>
+<ol class="list-group list-group-numbered">
+  <li *ngFor="let s of studentsdata; index as i" class="list-group-item">
+    <br />
+    {{ s.firstName }},
+    <br />
+    {{ s.lastName }},
+    <br />
+    {{ s.stdclass }},
+    <br />
+    {{ s.subject }},
+    <br />
+    {{ s.dob }}
+    <br />
+    <br />
+    <button type="button" class="btn btn-danger" (click)="delete(s, i)">
+      Delete Student
+    </button>
+  </li>
+</ol>

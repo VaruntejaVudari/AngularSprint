@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">First Nmane</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput"
+      [(ngModel)]="students.firstName"
+      placeholder="Enter the First Name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Last Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput2"
+      [(ngModel)]="students.lastName"
+      placeholder="Enter the Last Name"
+    />
+  </div>
+  <br />
+
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Class</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput2"
+      [(ngModel)]="students.stdclass"
+      placeholder="upload the class"
+    />
+  </div>
+  <br />
+
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Subject</label>
+    <input
+      type="text"
+      class="form-control"
+      id="formGroupExampleInput2"
+      [(ngModel)]="students.subject"
+      placeholder="Enter the Subject"
+    />
+  </div>
+  <br />
+
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Date Of Birth</label>
+    <input
+      type="date"
+      class="form-control"
+      id="formGroupExampleInput2"
+      [(ngModel)]="students.dob"
+      placeholder="Enter the DOB"
+    />
+  </div>
+  <br />
+  <br />
+  <button type="button" class="btn btn-primary btn-lg" (click)="save()">
+    Submit
+  </button>
+</div>
